@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --primary-dark: #5651e5;
+  --primary-light: #709dff;
+} */
+
+/* body {
+  padding: 20px 100px;
+  background-color: g;
+} */
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 20px 20px;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-900        px-[100px] py-5;
+  }
+  h1 {
+    @apply md:text-5xl text-3xl   font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  p {
+    @apply text-xl;
+  }
+  /* button {
+    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md;
+  } */
+  /* .icon {
+    @apply text-2xl cursor-pointer;
+  } */
+}
